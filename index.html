@@ -3,149 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Software Engineer</title>
-    <link rel="stylesheet" href="site.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Retro 2000's Personal Blog</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, sans-serif;
+            background: linear-gradient(to bottom, #98c1d9, #5e60ce);
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background: #293241;
+            color: #f1faee;
+            padding: 20px;
+        }
+        header h1 {
+            font-size: 2.5em;
+            text-shadow: 2px 2px #333;
+        }
+        nav {
+            margin: 15px 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: #ee6c4d;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #f1faee;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+        .section {
+            background: #f1faee;
+            border: 2px solid #3d5a80;
+            margin: 15px;
+            padding: 15px;
+            width: 300px;
+            box-shadow: 4px 4px #98c1d9;
+        }
+        .footer {
+            background: #293241;
+            color: #f1faee;
+            padding: 10px;
+            font-size: 0.8em;
+            margin-top: 20px;
+        }
+        .neon-text {
+            color: #ee6c4d;
+            text-shadow: 0 0 5px #f4a261, 0 0 10px #f4a261;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <div class="terminal-window">
-            <div class="terminal-header">
-                <span class="terminal-button"></span>
-                <span class="terminal-button"></span>
-                <span class="terminal-button"></span>
-                <p class="terminal-title">welcome.sh</p>
-            </div>
-            <div class="terminal-content">
-                <p class="typing-effect"><span class="command-prompt">$</span> whoami</p>
-                <p class="response">Your Name - Software Engineer</p>
-                <p class="typing-effect"><span class="command-prompt">$</span> ./welcome.sh</p>
-                <p class="response">Hello World! Welcome to my digital space.</p>
-                <p class="blinking-cursor"><span class="command-prompt">$</span> <span class="cursor">|</span></p>
-            </div>
-        </div>
+        <h1>Welcome to My Retro Blog</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
-
-    <nav>
-        <ul>
-            <li><a href="#about">about</a></li>
-            <li><a href="#projects">projects</a></li>
-            <li><a href="#blog">blog</a></li>
-            <li><a href="#contact">contact</a></li>
-        </ul>
-    </nav>
-
-    <main>
-        <section id="about">
-            <h2>&lt;about&gt;</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Hello there! I'm <strong>Your Name</strong>, a software engineer with a passion for creating elegant solutions to complex problems.</p>
-                    <p>I specialize in [your specialties here] and enjoy working with [technologies you like].</p>
-                    <p>When I'm not coding, you can find me [your interests outside of work].</p>
-                </div>
-                <div class="skill-badges">
-                    <span class="skill-badge">HTML5</span>
-                    <span class="skill-badge">CSS3</span>
-                    <span class="skill-badge">JavaScript</span>
-                    <span class="skill-badge">Python</span>
-                    <span class="skill-badge">Git</span>
-                    <!-- Add more skills as needed -->
-                </div>
-            </div>
-            <h2>&lt;/about&gt;</h2>
-        </section>
-
-        <section id="projects">
-            <h2>&lt;projects&gt;</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3>Project Name</h3>
-                    <div class="project-tags">
-                        <span class="project-tag">Web</span>
-                        <span class="project-tag">React</span>
-                    </div>
-                    <p>Short description of your project goes here. Explain what it does and what technologies you used.</p>
-                    <div class="project-links">
-                        <a href="#" target="_blank"><i class="fab fa-github"></i> Code</a>
-                        <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Demo</a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <h3>Another Project</h3>
-                    <div class="project-tags">
-                        <span class="project-tag">API</span>
-                        <span class="project-tag">Node.js</span>
-                    </div>
-                    <p>Short description of your project goes here. Explain what it does and what technologies you used.</p>
-                    <div class="project-links">
-                        <a href="#" target="_blank"><i class="fab fa-github"></i> Code</a>
-                        <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Demo</a>
-                    </div>
-                </div>
-
-                <!-- Add more project cards as needed -->
-            </div>
-            <h2>&lt;/projects&gt;</h2>
-        </section>
-
-        <section id="blog">
-            <h2>&lt;blog&gt;</h2>
-            <div class="blog-posts">
-                <article class="blog-post">
-                    <h3>Blog Post Title</h3>
-                    <div class="post-meta">
-                        <span class="post-date">April 9, 2025</span>
-                        <span class="post-tags">Tech, Programming</span>
-                    </div>
-                    <p>Preview of your blog post goes here. This should be a short excerpt that gives readers a taste of what the full article is about...</p>
-                    <a href="#" class="read-more">Read More →</a>
-                </article>
-
-                <article class="blog-post">
-                    <h3>Another Blog Post</h3>
-                    <div class="post-meta">
-                        <span class="post-date">April 2, 2025</span>
-                        <span class="post-tags">Personal</span>
-                    </div>
-                    <p>Preview of your blog post goes here. This should be a short excerpt that gives readers a taste of what the full article is about...</p>
-                    <a href="#" class="read-more">Read More →</a>
-                </article>
-
-                <!-- Add more blog posts as needed -->
-            </div>
-            <h2>&lt;/blog&gt;</h2>
-        </section>
-
-        <section id="contact">
-            <h2>&lt;contact&gt;</h2>
-            <div class="contact-content">
-                <p>Interested in connecting? You can reach me at:</p>
-                <div class="contact-links">
-                    <a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i> your.email@example.com</a>
-                    <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                    <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                    <a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
-                </div>
-            </div>
-            <h2>&lt;/contact&gt;</h2>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer-content">
-            <p>© <span id="current-year">2025</span> Your Name | Built with <span class="heart">❤</span> and Nostalgia</p>
-            <p class="ascii-art">
-               +-+-+-+-+-+-+-+
-               |C|O|D|E|R|.|.|
-               +-+-+-+-+-+-+-+
-            </p>
+    <div class="container">
+        <div class="section" id="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm a software engineer passionate about coding, gaming, and retro web aesthetics!</p>
         </div>
+        <div class="section" id="projects">
+            <h2>Projects</h2>
+            <p>Check out my latest software projects and collaborations.</p>
+        </div>
+        <div class="section" id="blog">
+            <h2>Blog</h2>
+            <p>I write about technology, hobbies, and the little things that inspire me daily.</p>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2025 My Retro Blog | Built with love and nostalgia. <span class="neon-text">✨</span></p>
     </footer>
-
-    <script>
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-    </script>
 </body>
 </html>
